@@ -1,4 +1,7 @@
-
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package perpustakaan;
 
 import java.awt.event.ActionEvent;
@@ -8,6 +11,10 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import javax.swing.Timer;
 
+/**
+ *
+ * @author teguh
+ */
 public class Utama extends javax.swing.JFrame {
    /**
      * Creates new form Utama

@@ -1,4 +1,7 @@
-
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package perpustakaan;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +12,10 @@ import java.sql.Statement;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-
+/**
+ *
+ * @author teguh
+ */
 public class Pinjam extends javax.swing.JFrame {
 private static Connection koneksi; //Koneksi
 
@@ -61,6 +67,11 @@ private static Connection koneksi; //Koneksi
      return koneksi;
      
  }
+ 
+       
+    
+   
+
    
     /**
      * This method is called from within the constructor to initialize the form.

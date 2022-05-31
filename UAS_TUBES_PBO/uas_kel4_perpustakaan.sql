@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 4.8.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 28, 2022 at 12:38 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.12
+-- Generation Time: May 30, 2022 at 02:30 PM
+-- Server version: 10.1.34-MariaDB
+-- PHP Version: 7.2.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -57,6 +58,53 @@ CREATE TABLE `koleksi` (
   `Stock` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `koleksi`
+--
+
+INSERT INTO `koleksi` (`Kode`, `Judul`, `Pengarang`, `Penerbit`, `Stock`) VALUES
+('b001', 'bukuku', 'anonim', 'asia', '3');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login`
+--
+
+CREATE TABLE `login` (
+  `id_petugas` varchar(10) NOT NULL,
+  `username` varchar(25) NOT NULL,
+  `password` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`id_petugas`, `username`, `password`) VALUES
+('P001', 'admin', 'admin');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `petugas`
+--
+
+CREATE TABLE `petugas` (
+  `id_petugas` varchar(10) NOT NULL,
+  `nama` varchar(50) NOT NULL,
+  `tl` date NOT NULL,
+  `alamat` text NOT NULL,
+  `jk` enum('Pria','Wanita') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `petugas`
+--
+
+INSERT INTO `petugas` (`id_petugas`, `nama`, `tl`, `alamat`, `jk`) VALUES
+('P001', 'Suryani', '2002-01-14', 'Bandung', 'Wanita');
+
 -- --------------------------------------------------------
 
 --
@@ -83,6 +131,13 @@ CREATE TABLE `stok` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `stok`
+--
+
+INSERT INTO `stok` (`Kode`, `Jumlah`) VALUES
+('b001', '3');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -97,6 +152,12 @@ ALTER TABLE `anggota`
 --
 ALTER TABLE `koleksi`
   ADD PRIMARY KEY (`Kode`);
+
+--
+-- Indexes for table `petugas`
+--
+ALTER TABLE `petugas`
+  ADD PRIMARY KEY (`id_petugas`);
 
 --
 -- Indexes for table `pinjam`

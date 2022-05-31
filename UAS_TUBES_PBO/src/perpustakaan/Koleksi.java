@@ -1,4 +1,7 @@
-
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package perpustakaan;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +11,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-
+/**
+ *
+ * @author teguh
+ */
 public class Koleksi extends javax.swing.JFrame {
 private static Connection koneksi; //Koneksi
     /**
