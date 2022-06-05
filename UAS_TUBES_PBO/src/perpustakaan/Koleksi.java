@@ -33,7 +33,7 @@ public void tampilkandata() {
             buka_koneksi();
             String sql = "select * from koleksi";
             Statement stat = koneksi.createStatement();
-            ResultSet res=stat.executeQuery(sql);
+            ResultSet res = stat.executeQuery(sql);
             while (res.next()) {
                 tabelkoleksi.addRow(new Object[]{res.getString(1),res.getString(2),res.getString(3),res.getString(4),res.getString(5)});
             }
@@ -196,6 +196,7 @@ public void tampilkandata() {
             }
         });
 
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem1.setText("Anggota");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -204,6 +205,7 @@ public void tampilkandata() {
         });
         jMenu1.add(jMenuItem1);
 
+        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_K, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem2.setText("Koleksi");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -212,6 +214,7 @@ public void tampilkandata() {
         });
         jMenu1.add(jMenuItem2);
 
+        jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem3.setText("Peminjaman");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -220,6 +223,7 @@ public void tampilkandata() {
         });
         jMenu1.add(jMenuItem3);
 
+        Utama.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         Utama.setText("Utama");
         Utama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -230,7 +234,7 @@ public void tampilkandata() {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("HELP");
+        jMenu2.setText("ABOUT");
         jMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jMenu2MouseClicked(evt);
@@ -523,7 +527,11 @@ public void tampilkandata() {
 
     private void jMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2MouseClicked
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "Lihatlah Data Base Bila Terjadi Kesalahan"+"\n");
+        JOptionPane.showMessageDialog(this, "Created By : Kelompok 4"+"\n"+
+                "- Haruman Wiguna (2007232)"+"\n"+
+                "- Dimas Aditya Permana (2000746)"+"\n"+
+                "- Suryani Lestari (2008261)"+"\n"+
+                "- Aiman Abdurrahman (2009038)");                  
     }//GEN-LAST:event_jMenu2MouseClicked
 
     private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
@@ -562,6 +570,7 @@ public void tampilkandata() {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Koleksi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */

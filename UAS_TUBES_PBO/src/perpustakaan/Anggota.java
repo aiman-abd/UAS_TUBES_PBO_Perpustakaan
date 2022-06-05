@@ -812,6 +812,7 @@ private static Connection buka_koneksi() {
 
         jMenu129.setText("FORM");
 
+        jMenuItem9.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem9.setText("Anggota");
         jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -820,6 +821,7 @@ private static Connection buka_koneksi() {
         });
         jMenu129.add(jMenuItem9);
 
+        jMenuItem10.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_K, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem10.setText("Koleksi");
         jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -828,6 +830,7 @@ private static Connection buka_koneksi() {
         });
         jMenu129.add(jMenuItem10);
 
+        jMenuItem11.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem11.setText("Peminjaman");
         jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -836,6 +839,7 @@ private static Connection buka_koneksi() {
         });
         jMenu129.add(jMenuItem11);
 
+        jMenuItem12.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem12.setText("Utama");
         jMenuItem12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -846,7 +850,7 @@ private static Connection buka_koneksi() {
 
         jMenuBar1.add(jMenu129);
 
-        jMenu130.setText("HELP");
+        jMenu130.setText("ABOUT");
         jMenu130.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jMenu130MouseClicked(evt);
@@ -1135,7 +1139,11 @@ private static Connection buka_koneksi() {
 
     private void jMenu130MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu130MouseClicked
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "Lihat Database Bila Terjadi Kesalahan"+"\n");
+        JOptionPane.showMessageDialog(this, "Created By : Kelompok 4"+"\n"+
+                "- Haruman Wiguna (2007232)"+"\n"+
+                "- Dimas Aditya Permana (2000746)"+"\n"+
+                "- Suryani Lestari (2008261)"+"\n"+
+                "- Aiman Abdurrahman (2009038)");
     }//GEN-LAST:event_jMenu130MouseClicked
 
     private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
@@ -1193,6 +1201,7 @@ private static Connection buka_koneksi() {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Anggota.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
